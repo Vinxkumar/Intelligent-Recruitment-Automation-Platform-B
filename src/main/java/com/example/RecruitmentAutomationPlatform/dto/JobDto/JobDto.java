@@ -7,7 +7,6 @@ import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.Email;
 
 import lombok.*;
-import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
@@ -17,7 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class JobRequestDto {
+public class JobDto {
 
     private String title;
 

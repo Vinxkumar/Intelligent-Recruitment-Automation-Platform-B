@@ -1,6 +1,7 @@
 package com.example.RecruitmentAutomationPlatform.dto.JobDto;
 
 import com.example.RecruitmentAutomationPlatform.Types.EmploymentType;
+import com.example.RecruitmentAutomationPlatform.Types.ExperienceRange;
 import com.example.RecruitmentAutomationPlatform.Types.WorkType;
 
 import jakarta.annotation.Nullable;
@@ -17,6 +18,8 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class JobDto {
+
+    private Long id;
 
     private String title;
 
@@ -35,7 +38,8 @@ public class JobDto {
 
     private List<String> techStack;
 
-    private String expRange;
+
+    private ExperienceRange experience;
 
     @Nullable
     private String location;

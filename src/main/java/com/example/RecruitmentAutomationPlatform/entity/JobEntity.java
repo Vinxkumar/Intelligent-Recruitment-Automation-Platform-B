@@ -1,6 +1,7 @@
 package com.example.RecruitmentAutomationPlatform.entity;
 
 import com.example.RecruitmentAutomationPlatform.Types.EmploymentType;
+import com.example.RecruitmentAutomationPlatform.Types.ExperienceRange;
 import com.example.RecruitmentAutomationPlatform.Types.WorkType;
 
 import jakarta.annotation.Nullable;
@@ -56,8 +57,9 @@ public class JobEntity {
     @Column(name = "tech_stack")
     private List<String> techStack;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "experience_range")
-    private String expRange;
+    private ExperienceRange expRange;
 
     @Nullable
     @Column(name = "location")

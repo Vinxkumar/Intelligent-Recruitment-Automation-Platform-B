@@ -4,5 +4,6 @@ public enum ExperienceRange {
     FRESHER,
     JUNIOR,
     INTERMEDIATE,
-    SENIOR
+    SENIOR,
+    MASTER
 }

@@ -21,33 +21,33 @@ public class JobDto {
 
     private Long id;
 
-    private String title;
+    private String title; //done
 
-    private String companyName;
+    private String companyName; //done
 
     @Email
-    private String companyEmail;
+    private String companyEmail; //done
 
-    private String pQualification;
-
-    @Nullable
-    private String mQualification;
+    private String pQualification; //done
 
     @Nullable
-    private String jd;
-
-    private List<String> techStack;
-
-
-    private ExperienceRange experience;
+    private String mQualification;//done
 
     @Nullable
-    private String location;
+    private String jd; //done
+
+    private List<String> techStack; //done
+
+
+    private ExperienceRange expRange; //done
 
     @Nullable
-    private String compensation;
+    private String location; //done
 
-    private EmploymentType empType;
+    @Nullable
+    private String compensation; //done
+
+    private EmploymentType empType;  //done
 
     private WorkType workType;
 

@@ -42,15 +42,18 @@ public class JobEntity {
     @Column(name = "company_mail", unique = false)
     private String companyEmail;
 
-    @Column(name = "preferred_qualification")
+    @Lob
+    @Column(name = "preferred_qualification", columnDefinition = "TEXT")
     private String pQualification;
 
+    @Lob
     @Nullable
-    @Column(name = "minimum_qualification")
+    @Column(name = "minimum_qualification", columnDefinition = "TEXT")
     private String mQualification;
 
     @Nullable
-    @Column(name = "job_description")
+    @Lob
+    @Column(name = "job_description", columnDefinition = "TEXT")
     private String jd;
 
     @ElementCollection
